@@ -1,0 +1,44 @@
+<section class="paginaMantenimiento">
+
+    <a class="back1" routerLink="/pagina-perfil">
+        <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+
+    <div class="card1">
+
+        <h2 class="titulo">HISTORIAL</h2>
+
+        <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
+
+            <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
+                <p class="texto_condicion">
+                    En este momento no tienes ningún servicio próximo.
+                    Pulsa aquí para crear un mantenimiento.
+                </p>
+                <img class="icono_condicion" src="../../../assets/multimedia/precaucion.png">
+            </div>
+        </div>
+        <ng-template #card>
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="historialDetalle(index)"
+                class="cards_mantenimiento">
+                <section *ngIf="mantenimiento.name === null" class="card_mantenimiento">
+                    <h1 class="texto_1">{{mantenimiento.type | titlecase}}
+                        <p class=" subtexto_1">&nbsp;{{mantenimiento.subtype | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimiento.end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+                <section *ngIf="mantenimiento.name !== null" class="card_mantenimiento">
+                    <h1 class="texto_1">{{mantenimiento.name.charAt(0).toUpperCase() + mantenimiento.name.slice(1)}}
+                        <p class=" subtexto_1">&nbsp;{{mantenimiento.type | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimiento.end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+            </div>
+        </ng-template>
+
+
+    </div>
+
+</section>

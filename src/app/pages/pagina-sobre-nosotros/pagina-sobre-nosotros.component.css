@@ -1,0 +1,122 @@
+.body {
+    width: 414px;
+    height: 694px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 146px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.contenedor {
+    position: absolute;
+    width: 345px;
+    height: 579px;
+    left: 34px;
+    top: 188px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card1 {
+    border: solid 2px #FFD966;
+    background: var(--amarillo);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    width: 345px;
+    height: 111px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    left: 41px;
+    top: 208px;
+    padding: 40px;
+}
+.foto{
+    width: 90px;
+    height: 90px;
+    left: 58px;
+    top: 224px;
+    border-radius: 10px;
+    background: #C4C4C4;
+    margin: 1px;
+}
+
+.caja1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 310px;
+} 
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3px;
+    text-align: center;
+    top: 30px;
+}
+.iconos{
+    width: 120px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around; 
+    align-items: flex-start;
+    top: 30px;
+}
+
+.nombre {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.dev {
+    width: 200px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 20px;
+}
+.lk{
+color: var(--negro);
+font-size: 25px;
+}
+.mail{
+    color: var(--negro);
+    font-size: 25px;
+}
+.git{
+    color: var(--negro);
+    font-size: 25px;
+}
+
+.git {
+    color: var(--negro)
+}

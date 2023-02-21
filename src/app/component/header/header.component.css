@@ -1,0 +1,43 @@
+.contenedor1 {
+    position: fixed;
+    z-index: 1;
+    width: 414px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    background: var(--negro);
+}
+
+.titulo {
+    position: absolute;
+    width: 280px;
+    height: 103px;
+    top: 9px;
+    left: 24px
+}
+
+.contenedor2 {
+    position: absolute;
+    left: 335px;
+    top: 49px;
+}
+
+.boton {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoPersona.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--negro);
+    border: none;
+}
+
+.boton_activado {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoPersonaAmarillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--negro);
+    border: none;
+}

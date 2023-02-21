@@ -1,0 +1,76 @@
+.contenedor {
+    position: fixed;
+    /* z-index: 1; */
+    width: 414px;
+    height: 85px;
+    left: 0px;
+    background: #191213;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0px;
+
+}
+
+.boton1 {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 55px;
+    background-color: #191213;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.boton1_activado {
+    background-image: url(../../../assets/multimedia/iconoHomeAmarillo.png);
+}
+
+.boton2 {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/iconoMas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 58px;
+    background-color: #191213;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.boton2_activado {
+    background-image: url(../../../assets/multimedia/iconoMasAmarillo.png);
+}
+
+.boton3 {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/llave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 53px;
+    background-color: #191213;
+    border: none;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+.boton3_activado {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../../assets/multimedia/llaveAmarilla.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 53px;
+    background-color: #191213;
+    border: none;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:844px) {}
+
+@media screen and (max-width:812px) {}

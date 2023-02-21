@@ -1,0 +1,51 @@
+<section class="home_logueado">
+
+    <section class="card1">
+
+        <h2 class="titulo_1">Bienvenido {{this.usuario.usuario.name}}</h2>
+
+        <p class="consejo">
+            {{this.tips.consejo}}
+        </p>
+
+        <h4 class="lineas">- - - - - - -</h4>
+
+        <h2 class="titulo_2">Tu próximo servicio es:</h2>
+
+        <div *ngIf="mantenimientos.length === 0 ; else card" class="condicion">
+
+            <div routerLink="/pagina-agregar-mantenimiento" class="card_condicion">
+                <p class="texto_condicion">
+                    En este momento no tienes ningún servicio próximo.
+                    Pulsa aquí para crear un mantenimiento.
+                </p>
+                <img class="icono_condicion" src="../../../assets/multimedia/precaucion.png">
+            </div>
+        </div>
+
+        <ng-template #card>
+            <div *ngFor="let mantenimiento of mantenimientos; let index=index" on-click="mantenimientoDetalle(index)">
+                <section *ngIf="mantenimientos[0].name === null"
+                    [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                    <h1 class="texto_1">{{mantenimientos[0].type | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimientos[0].subtype | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimientos[0].end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+                <section *ngIf="mantenimientos[0].name !== null"
+                    [ngClass]="compararFecha(mantenimiento.end_date) ? 'cards_mantenimiento_roja': 'cards_mantenimiento_verde'">
+                    <h1 class="texto_1">{{mantenimientos[0].name | titlecase}}
+                        <p class="subtexto_1">&nbsp;{{mantenimientos[0].type | titlecase}}</p>
+                    </h1>
+                    <p class="texto_2">FECHA FIN: {{mantenimientos[0].end_date.substring(0,10)}} </p>
+                    <img class="icono" src="../../../assets/multimedia/iconoGancho.png">
+                </section>
+            </div>
+        </ng-template>
+
+        <figure class="imagen"></figure>
+
+    </section>
+
+</section>

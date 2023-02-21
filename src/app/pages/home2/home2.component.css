@@ -1,0 +1,213 @@
+.home_logueado {
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+
+.card1 {
+    position: absolute;
+    width: 345px;
+    height: 547px;
+    left: 34px;
+    top: 55px;
+    background: var(--gris10);
+    border-radius: 10px;
+}
+
+.titulo_1 {
+    position: absolute;
+    width: 318px;
+    height: 45px;
+    left: 13px;
+    top: 13px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--negro);
+}
+
+.consejo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 296px;
+    height: 84px;
+    margin-left: 24px;
+    margin-top: 55px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--negro);
+}
+
+.lineas {
+    color: var(--amarillo);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -32px;
+    font-size: 60px;
+}
+
+.titulo_2 {
+    position: absolute;
+    width: 318px;
+    height: 37px;
+    left: 13px;
+    top: 179px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #1F191A;
+}
+
+.cards_mantenimiento_roja {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    left: 17px;
+    top: 234px;
+    background: var(--gris40);
+    /* border: 2px dashed #FF0000; */
+    box-shadow: 0 0 5px 3px #FF0000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.cards_mantenimiento_verde {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    left: 17px;
+    top: 234px;
+    background: var(--gris40);
+    /* border: 2px dashed #FF0000; */
+    box-shadow: 0 0 5px 3px green;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_1 {
+    position: absolute;
+    width: 230px;
+    height: 34px;
+    margin-left: 19px;
+    margin-top: 9px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 37px;
+    color: var(--negro);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.subtexto_1 {
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--negro);
+    margin-top: 7.9px;
+}
+
+.texto_2 {
+    position: absolute;
+    width: 160px;
+    height: 23px;
+    left: 22px;
+    top: 41px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--negro);
+}
+
+.icono {
+    position: absolute;
+    width: 53px;
+    height: 63px;
+    left: 252px;
+    top: 9px;
+}
+
+.imagen {
+    position: absolute;
+    width: 318px;
+    height: 242px;
+    left: 13px;
+    top: 310px;
+    background: url("../../../assets/multimedia/cocheHome2.png");
+    z-index: -1;
+}
+
+.condicion {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    left: 17px;
+    top: 234px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.card_condicion {
+    position: absolute;
+    width: 310px;
+    height: 81px;
+    background: var(--gris40);
+    box-shadow: 0 0 5px 3px var(--amarillo);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.texto_condicion {
+    position: absolute;
+    width: 211px;
+    height: 58px;
+    left: 22px;
+    top: 10px;
+
+    font-family: 'Mukta Vaani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.icono_condicion {
+    position: absolute;
+    width: 64px;
+    height: 60px;
+    left: 238px;
+    top: 10px;
+}

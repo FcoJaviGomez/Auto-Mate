@@ -1,0 +1,119 @@
+.all {
+    position: absolute;
+    width: 414px;
+    height: 694px;
+    margin-top: 132px;
+}
+
+
+.back1 {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    left: 40px;
+    top: 14px;
+    font-size: 25px;
+    color: var(--amarillo);
+}
+
+.back {
+    position: absolute;
+    width: 345px;
+    height: 530px;
+    left: 34px;
+    top: 55px;
+    border-radius: 10px;
+    background-color: var(--gris10);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+} 
+.cajatexto{
+    
+    width: 345px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}  
+.titulo{
+    
+    text-align: center;
+   
+   
+
+}
+
+
+.lista{
+    
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoLista.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 55px;
+}
+.calendario{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoCalendario.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 65px;
+}
+.hucha{
+    
+    height: 90px;
+    width: 80px;
+    background-image: url(../../../assets/multimedia/iconoHucha.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 70px;
+    
+}
+.reloj{
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/multimedia/iconoReloj.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 60px;
+}
+.caja{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 329px;
+    height: 400px;
+}
+.a{ 
+    /* border: solid 2px green; */
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+    width: 340px;
+} 
+
+
+
+
+.frase{
+   
+    width: 180px;
+    font-size: 17px;
+    text-align: left;
+    
+    
+  
+}
+
+
